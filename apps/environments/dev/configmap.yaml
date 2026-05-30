@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vts-backend-config
+  namespace: vts-dev
+  labels:
+    project: vts-app
+data:                       
+  NODE_ENV: "development"
+  DEBUG_LEVEL: "debug"

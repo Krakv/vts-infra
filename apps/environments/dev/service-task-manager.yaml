@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: task-manager-service
+  namespace: vts-dev
+  labels:
+    project: vts-app
+spec:
+  type: ClusterIP
+  selector:
+    app: task-manager
+  ports:
+    - protocol: TCP
+      port: 3006
+      targetPort: 8080
