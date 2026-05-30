@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: task-manager-app
-          image: your-registry.com/krakv/task-manager:latest
+          image: krakv/task-manager:latest
           imagePullPolicy: Always
           
           ports:
