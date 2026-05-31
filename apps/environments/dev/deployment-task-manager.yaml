@@ -41,12 +41,6 @@ spec:
                 secretKeyRef:
                   name: vts-backend-secret
                   key: TELEGRAM_BOT_TOKEN
-            
-            - name: CONNECTION_STRING
-              valueFrom:
-                secretKeyRef:
-                  name: vts-backend-config
-                  key: CONNECTION_STRING
 
             - name: JWT_SECRET
               valueFrom:
