@@ -5,7 +5,7 @@ metadata:
   namespace: vts-dev
   labels:
     project: vts-app
-data:                       
-  NODE_ENV: "development"
-  DEBUG_LEVEL: "debug"
-  CONNECTION_STRING: "Host=172.18.0.4;Database=tasks;Username=postgres;Password=postgres"
+data:
+  ASPNETCORE_ENVIRONMENT: "Development"
+  ASPNETCORE_HTTP_PORTS: "8080"
+  ConnectionStrings__DefaultConnection: "Host=172.18.0.4;Port=5432;Database=tasks;Username=postgres;Password=postgres"
