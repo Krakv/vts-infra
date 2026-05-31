@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-manager-front
+  namespace: vts-dev
+  labels:
+    project: vts-app
+    app: task-manager-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: task-manager-front
+  template:
+    metadata:
+      labels:
+        project: vts-app
+        app: task-manager-front
+    spec:
+      containers:
+        - name: task-manager-front
+          image: krakv/task-manager-front:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
