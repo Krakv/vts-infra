@@ -45,7 +45,7 @@ spec:
             - name: CONNECTION_STRING
               valueFrom:
                 secretKeyRef:
-                  name: vts-backend-secret
+                  name: vts-backend-config
                   key: CONNECTION_STRING
 
             - name: JWT_SECRET
